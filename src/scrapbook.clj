@@ -7,7 +7,7 @@
   (try (func) (catch Exception e
               (do
                 (prn "Bad things happen")
-                (.printStackTrace e *out*))))
+                (.printStackTrace e))))
   )
 
 (prn (tryit #(/ 9 0)))
