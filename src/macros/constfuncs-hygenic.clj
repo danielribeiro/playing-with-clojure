@@ -1,4 +1,5 @@
 (ns macros.constfuncs-hygenic)
+;-If things get though, remember this: http://amalloy.hubpages.com/hub/Clojure-macro-writing-macros
 
 (defmacro constfuncs [& args]
   (cons `do
@@ -14,4 +15,4 @@
 (xfun 1 2 3)
 (xmacros 1 2 3)
 
-(prn (:arglists (meta #'xfun)))
+(prn  (:arglists (meta #'xfun)))
