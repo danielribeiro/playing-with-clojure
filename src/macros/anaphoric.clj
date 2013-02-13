@@ -1,4 +1,4 @@
-(ns evaling.anaphoric)
+(ns macros.anaphoric)
 (defmacro aif [test-form then-form]
   `(let [~'it ~test-form]
       (if ~'it ~then-form)))

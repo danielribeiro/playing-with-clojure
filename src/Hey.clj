@@ -1,5 +1,3 @@
-
-
 (defrecord Cool [name stuff])
 
 (def a (Cool. "m" "w?"))

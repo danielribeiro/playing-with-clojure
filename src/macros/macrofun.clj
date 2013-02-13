@@ -1,4 +1,4 @@
-(ns evaling.macrofun)
+(ns macros.macrofun)
 (defmacro ty [type]
   `(deftype ~type []))
 

@@ -1,4 +1,4 @@
-(ns evaling.deepmacros)
+(ns macros.deepmacros)
 
 (def changemap)
 (def changeforms)
