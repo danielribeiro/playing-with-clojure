@@ -1,4 +1,4 @@
-(ns macros.constfuncs)
+(ns macros.constfuncs-hygenic)
 
 (defmacro constfuncs [& args]
   (cons `do
@@ -15,4 +15,3 @@
 (macros 1 2 3)
 
 (prn (:arglists (meta #'fun)))
-(let)
