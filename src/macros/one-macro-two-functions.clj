@@ -13,3 +13,22 @@
 
 (xname)
 (yname)
+
+
+(defmacro multdefit [& args ]
+  (cons `do
+    (map (fn [a]
+           `(defit ~(symbol a))) args
+
+      ))
+  )
+
+(prn (macroexpand `(multdefit "one" "two")))
+
+(multdefit "one" "two")
+
+(xone)
+(yone)
+(xtwo)
+(ytwo
+  )
