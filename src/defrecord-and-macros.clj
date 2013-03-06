@@ -12,11 +12,8 @@
   )
 
 (defmacro recipe
-  ([x] `(list (single-recipe ~x))
-  )
-  ([x & args] `(cons (single-recipe ~x)  (recipe ~@args))
-  )
-  )
+  ([x] `(list (single-recipe ~x)))
+  ([x & args] `(cons (single-recipe ~x)  (recipe ~@args))))
 
 ;(prn (single-recipe aaa))
 
