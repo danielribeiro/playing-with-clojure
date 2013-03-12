@@ -3,8 +3,9 @@
 (defmacro simplemacro [arg]
   `(quote ~arg))
 
-(prn (macroexpand '(simplemacro (println "hey"))))
+(prn (macroexpand '(simplemacro {:name (name cool)})))
 
-(let [f (simplemacro (println "hey"))]
-  (prn (class f))
+(let [f (simplemacro (println {:name (name cool)}))]
+  (prn (->> f last :name first))
   )
+
