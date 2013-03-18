@@ -1,10 +1,10 @@
 (ns macros.debugging-macro)
 
 (defmacro bugit [& form]
-  (list `do
-    `(prn ~form)
-    `(~@form))
-  )
+  `(let [res# (~@form)]
+     (prn res#)
+     res#
+     ))
 
 (prn (macroexpand '(bugit + 1 2)))
 
