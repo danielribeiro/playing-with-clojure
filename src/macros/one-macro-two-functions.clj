@@ -23,11 +23,12 @@
       ))
   )
 
-(prn (macroexpand `(multdefit "one" "two")))
+(prn (macroexpand `(multdefit one two)))
 
-(multdefit "one" "two")
+(multdefit one two)
 
 (xone)
 (yone)
 (xtwo)
 (ytwo)
+
