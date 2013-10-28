@@ -2,3 +2,6 @@
 
 
 (pr (sh "ls" "-l"))
+
+(pr (sh "not-a-real-command" "-l")) ; Throws an exception
+
